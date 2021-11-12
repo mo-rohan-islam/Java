@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HelloScan",
+            "request": "launch",
+            "mainClass": "HelloScan",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
