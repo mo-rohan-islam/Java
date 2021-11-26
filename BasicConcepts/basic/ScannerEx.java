@@ -12,6 +12,6 @@ public class ScannerEx
 		int number = reader.nextInt();
 
 		System.out.println("You entered " + number);
-
+		reader.close();
 	}
 }

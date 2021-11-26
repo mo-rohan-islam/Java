@@ -14,6 +14,6 @@ public class HelloScan {
         String name = reader.nextLine();
 
         System.out.println("Hello " + name +".");
-        
+        reader.close();
     }
 }

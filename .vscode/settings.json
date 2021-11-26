@@ -1,3 +1,7 @@
 {
-    "java.dependency.syncWithFolderExplorer": true
+    "java.project.sourcePaths": [
+        "BasicConcepts",
+        "AccessModifiers",
+        "Array"
+    ]
 }

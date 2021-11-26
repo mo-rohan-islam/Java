@@ -6,34 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch ReturnArray",
-            "request": "launch",
-            "mainClass": "ReturnArray",
-            "projectName": "Java_c0c81544"
-        },
-        {
-            "type": "java",
-            "name": "Launch D2Array",
-            "request": "launch",
-            "mainClass": "D2Array",
-            "projectName": "Java_c0c81544"
-        },
-        {
-            "type": "java",
-            "name": "Launch ArrayEx1",
-            "request": "launch",
-            "mainClass": "ArrayEx1",
-            "projectName": "Java_c0c81544"
-        },
-        {
-            "type": "java",
-            "name": "Launch HelloScan",
-            "request": "launch",
-            "mainClass": "HelloScan",
-            "projectName": ""
-        },
-        {
-            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -43,21 +15,70 @@
             "name": "Launch ArrayEx1",
             "request": "launch",
             "mainClass": "ArrayEx1",
-            "projectName": "Java-WIMS_2ef3f89b"
+            "projectName": "Java_c0c81544"
         },
         {
             "type": "java",
             "name": "Launch D2Array",
             "request": "launch",
             "mainClass": "D2Array",
-            "projectName": "Java-WIMS_2ef3f89b"
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch EntryPoint",
+            "request": "launch",
+            "mainClass": "Pack1.EntryPoint",
+            "projectName": "Java_c0c81544"
         },
         {
             "type": "java",
             "name": "Launch ReturnArray",
             "request": "launch",
             "mainClass": "ReturnArray",
-            "projectName": "Java-WIMS_2ef3f89b"
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch PublicClass",
+            "request": "launch",
+            "mainClass": "acrossClass.PublicClass",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloScan",
+            "request": "launch",
+            "mainClass": "basic.HelloScan",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "basic.HelloWorld",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lamp2",
+            "request": "launch",
+            "mainClass": "basic.Lamp2",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lights",
+            "request": "launch",
+            "mainClass": "basic.Lights",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScannerEx",
+            "request": "launch",
+            "mainClass": "basic.ScannerEx",
+            "projectName": "Java_c0c81544"
         }
     ]
 }
