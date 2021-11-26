@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReturnArray",
+            "request": "launch",
+            "mainClass": "ReturnArray",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch D2Array",
+            "request": "launch",
+            "mainClass": "D2Array",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayEx1",
+            "request": "launch",
+            "mainClass": "ArrayEx1",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
             "name": "Launch HelloScan",
             "request": "launch",
             "mainClass": "HelloScan",
