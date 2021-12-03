@@ -1,7 +1,7 @@
 {
     "java.project.sourcePaths": [
         "BasicConcepts",
-        "AccessModifiers",
-        "Array"
+        "Array",
+        "."
     ]
 }

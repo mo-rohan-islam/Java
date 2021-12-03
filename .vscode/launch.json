@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestFile",
+            "request": "launch",
+            "mainClass": "Inheritance.TestFile",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConstOverload",
+            "request": "launch",
+            "mainClass": "Inheritance.ConstOverload",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestFile",
+            "request": "launch",
+            "mainClass": "TestPackage.TestFile",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programmer",
+            "request": "launch",
+            "mainClass": "Inheritance.Programmer",
+            "projectName": "Java_c0c81544"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
