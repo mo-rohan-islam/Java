@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ans2",
+            "request": "launch",
+            "mainClass": "Playground.UpkarakTech.Ans2",
+            "projectName": "Java_5267bf51"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ans1",
+            "request": "launch",
+            "mainClass": "Playground.UpkarakTech.Ans1",
+            "projectName": "Java_5267bf51"
+        },
+        {
+            "type": "java",
             "name": "Launch ConstOverload",
             "request": "launch",
             "mainClass": "Inheritance.ConstOverload",

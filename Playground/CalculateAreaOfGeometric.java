@@ -1,3 +1,5 @@
+package Playground;
+
 import java.util.Scanner;
 
 public class CalculateAreaOfGeometric {

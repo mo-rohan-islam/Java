@@ -1,4 +1,4 @@
-package UpkarakTech;
+package Playground.UpkarakTech;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

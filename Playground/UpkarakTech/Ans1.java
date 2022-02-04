@@ -1,4 +1,4 @@
-package UpkarakTech;
+package Playground.UpkarakTech;
 
 import java.lang.Math;
 import java.util.Scanner;
