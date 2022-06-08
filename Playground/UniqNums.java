@@ -1,4 +1,4 @@
-package Playground;
+// package Playground;
 
 // Write a program to read two sets of numbers from user using arrays. Each SET contains 10 numbers without duplicates. The program must print the numbers that are available in only one of the sets not on both.
 // For example 

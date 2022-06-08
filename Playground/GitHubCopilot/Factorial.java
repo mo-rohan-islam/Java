@@ -1,4 +1,6 @@
-package Playground.GitHubCopilot;
+// package Playground.GitHubCopilot;
+
+package GitHubCopilot;
 
 public class Factorial {
     
