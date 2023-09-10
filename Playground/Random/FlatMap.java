@@ -24,6 +24,7 @@ public class FlatMap {
         System.out.println(charCount);
 
         Long count = word.chars().mapToObj(c -> (char) c).collect(Collectors.counting());
+        // count = word.chars().count();
         System.out.println(count);
 
     }
