@@ -13,27 +13,12 @@ class SecondHighestSalary {
 
         List<Employee> listOfEmployees = new ArrayList<>(Arrays.asList(e1, e2, e3, e4));
 
-        Integer secondHighestSalary = listOfEmployees.stream()
-                .sorted(Comparator.comparingInt(Employee::getSalary).reversed())
+        Double secondHighestSalary = listOfEmployees.stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
                 .skip(1)
                 .findFirst()
                 .get()
                 .getSalary();
         System.out.println("Second Highest Salary: " + secondHighestSalary);
     }
-}
-
-class Employee {
-    String name;
-    Integer salary;
-
-    public Employee(String name, Integer salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public Integer getSalary() {
-        return salary;
-    }
-
 }
