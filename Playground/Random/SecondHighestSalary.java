@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 class SecondHighestSalary {
 
@@ -14,9 +13,13 @@ class SecondHighestSalary {
 
         List<Employee> listOfEmployees = new ArrayList<>(Arrays.asList(e1, e2, e3, e4));
 
-        Optional<Employee> secondHighestSalary = listOfEmployees.stream()
-                .sorted(Comparator.comparingInt(Employee::getSalary).reversed()).skip(1).findFirst();
-        System.out.println("Second Highest Salary: " + secondHighestSalary.get().getSalary());
+        Integer secondHighestSalary = listOfEmployees.stream()
+                .sorted(Comparator.comparingInt(Employee::getSalary).reversed())
+                .skip(1)
+                .findFirst()
+                .get()
+                .getSalary();
+        System.out.println("Second Highest Salary: " + secondHighestSalary);
     }
 }
 

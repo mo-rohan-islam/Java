@@ -1,15 +1,15 @@
 // package Playground;
 
 /**
- * test2
+ * Test
  */
-class test2 {
+class Test {
     static {
-        System.out.println("Inside test2 static block");
+        System.out.println("Inside Test static block");
     }
 
     static void display() {
-        System.out.println("Inside test2 display block");
+        System.out.println("Inside Test display block");
     }
 }
 
@@ -25,7 +25,7 @@ public class StaticBlock {
 
     public static void main(String[] args) {
         System.out.println("Inside main");
-        test2.display();
+        Test.display();
         display();
     }
 }
