@@ -1,0 +1,12 @@
+query authorDetails($lastName: ID) {
+    authorByLastName(lastName: $lastName) {
+        id
+        firstName
+        lastName
+        books {
+            id
+            name
+            pages
+        }
+    }
+}
