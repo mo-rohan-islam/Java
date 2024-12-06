@@ -11,6 +11,7 @@ public class StringReverse {
 
         String str = "How are you doing today?";
         // String palindromeInput = "Madam";
+        String palindromeInput = "Rohar";
         String strReversed = "";
 
         // Expected Output: "woh are uoy doing ?yadot"
@@ -23,9 +24,9 @@ public class StringReverse {
             strReversed += ((i % 2 == 0) ? reverseString(word) : word) + SPACE;
         }
 
-        // strReversed = reverseString(palindromeInput);
-        // System.out.println("Is Palindrome? " +
-        // checkPalindromeInsensitive(palindromeInput, strReversed));
+        strReversed = reverseString(palindromeInput);
+        System.out.println("Is Palindrome? " +
+                checkPalindromeInsensitive(palindromeInput, strReversed));
 
         System.out.println(strReversed);
     }
@@ -73,8 +74,10 @@ public class StringReverse {
         for (int i = 0; i < input.length(); i++) {
             char inputChar = input.charAt(i);
             char reverseChar = reverse.charAt(i);
-            System.out.println((int) inputChar + " - " + (int) reverseChar);
-            if ((int) inputChar != (int) reverseChar) {
+            // System.out.println((int) inputChar + " - " + (int) reverseChar);
+            System.out.println(inputChar + " - " + reverseChar);
+            // if ((int) inputChar != (int) reverseChar) {
+            if (inputChar != reverseChar) {
                 result = false;
                 break;
             }

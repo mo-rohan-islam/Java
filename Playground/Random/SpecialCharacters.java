@@ -1,5 +1,3 @@
-// package Playground;
-
 import java.util.Scanner;
 
 /**
@@ -8,10 +6,10 @@ import java.util.Scanner;
  * Input: wim$#&gra7m
  * 
  */
-public class SubString {
+public class SpecialCharacters {
 
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
         System.out.print("Input: ");
         String str = scan.nextLine();
@@ -19,9 +17,9 @@ public class SubString {
         String output = "";
 
         for (int i = 0; i < str.length(); i++) {
-            
+
             char ch = str.charAt(i);
-            if ((ch >= 65 && ch <=90) || (ch >=97 && ch <=122)) {
+            if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122)) {
                 continue;
             } else {
                 output = output + ch;

@@ -16,7 +16,8 @@ public class ConsonantString {
         Predicate<Character> checkVowelFromList = ch -> vowelList.contains(ch);
 
         output = text.chars().mapToObj(ch -> Character.valueOf((char) ch))
-                .filter(ch -> !checkVowelFromList.test(ch))
+                // .filter(ch -> !checkVowelFromList.test(ch))
+                .filter(ch -> !vowelList.contains(ch))
                 .map(Object::toString)
                 .collect(Collectors.joining());
 

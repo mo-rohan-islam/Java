@@ -13,17 +13,19 @@ public class Teenager {
         listOfCustomers.add(new Customer(19, "Sriti"));
         listOfCustomers.add(new Customer(15, "Shrusti"));
 
-        listOfCustomers.stream().filter(customer -> customer.getAge() >= 13 && customer.getAge() <= 19)
+        listOfCustomers.stream()
+                .filter(customer -> customer.getAge() >= 13 && customer.getAge() <= 19)
                 .forEach(System.out::println);
 
         System.out.println();
 
-        List<String> adultNames = listOfCustomers.stream()
-                .sorted(Comparator.comparingInt(Customer::getAge).reversed())
+        // List<String> adultNames = listOfCustomers.stream()
+        listOfCustomers.stream()
+                // .sorted(Comparator.comparingInt(Customer::getAge).reversed())
                 .filter(customer -> customer.getAge() >= 18)
-                .peek(System.out::println)
-                .map(Customer::getName).toList();
-        System.out.println(adultNames);
+                .forEach(System.out::println);
+        // .map(Customer::getName).toList();
+        // System.out.println(adultNames);
     }
 }
 

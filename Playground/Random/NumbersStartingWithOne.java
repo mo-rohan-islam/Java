@@ -7,7 +7,6 @@ public class NumbersStartingWithOne {
         intList.stream()
                 .map(n -> Integer.toString(n))
                 .filter(s -> s.startsWith("1"))
-                .map(s -> s + " ")
-                .forEach(System.out::print);
+                .forEach(s -> System.out.print(s + " "));
     }
 }

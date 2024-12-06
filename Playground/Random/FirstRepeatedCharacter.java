@@ -8,13 +8,11 @@ public class FirstRepeatedCharacter {
         String input = "Java Articles are Awesome";
 
         Entry<Character, Long> firstRepeatedChar = input.chars()
-                .mapToObj(c -> Character.toLowerCase(Character.valueOf((char) c)))
+                .mapToObj(c -> Character.toLowerCase((char) c))
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
-                .entrySet()
-                .stream()
+                .entrySet().stream()
                 .filter(entry -> entry.getValue() > 1L)
-                .findFirst()
-                .get();
+                .findFirst().get();
 
         System.out.println(firstRepeatedChar);
     }

@@ -7,14 +7,12 @@ public class FirstNonRepeated {
         String input = "Java articles are Awesome";
 
         Character uniqueChar = input.chars()
-                .mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)))
+                .mapToObj(c -> Character.toLowerCase((char) c))
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
-                .entrySet()
-                .stream()
+                .entrySet().stream()
                 .filter(entry -> entry.getValue() == 1L)
                 .map(entry -> entry.getKey())
-                .findFirst()
-                .get();
+                .findFirst().get();
 
         System.out.println(uniqueChar);
 

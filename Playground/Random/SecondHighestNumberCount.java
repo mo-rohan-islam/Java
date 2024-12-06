@@ -13,17 +13,18 @@ public class SecondHighestNumberCount {
         input.stream()
                 // .sorted(Comparator.reverseOrder())
                 // .limit(2)
-                // .map(n -> Integer.toString(n) + " ")
-                .collect(Collectors.groupingBy(Function.identity(),
+                // .skip(1)
+                // .forEach(System.out::println);
+
+                .collect(Collectors.groupingBy(
+                        Function.identity(),
                         () -> new TreeMap<>(Comparator.reverseOrder()),
                         Collectors.counting()))
-                .entrySet()
-                .stream()
+                .entrySet().stream()
                 .skip(1)
                 .limit(1)
                 .forEach(System.out::println);
-        // .skip(1).findFirst().get();
 
-        // System.out.println(secondHighestInt);
+        // .skip(1).findFirst().get();
     }
 }

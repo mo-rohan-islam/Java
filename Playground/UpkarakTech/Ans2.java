@@ -1,32 +1,22 @@
-// package Playground.UpkarakTech;
-
 package UpkarakTech;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ans2 {
 
-    public int LargestElement(int[] intArray) {
-
+    public int largest(int[] intArray) {
         int largest_item = 0;
-
         for (int item : intArray) {
-
             if (item > largest_item) {
                 largest_item = item;
             }
         }
-
         return largest_item;
     }
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-
-        try {
-
+        try (Scanner scan = new Scanner(System.in)) {
             System.out.print("Enter size of array: ");
             int SIZE = scan.nextInt();
 
@@ -37,14 +27,12 @@ public class Ans2 {
                 num_array[i] = scan.nextInt();
             }
 
-            System.out.println("\nThe largest element is " + new Ans2().LargestElement(num_array));
-
-        } catch (InputMismatchException e) {
-
-            System.out.println(e + "! Expected Integer value");
+            Ans2 object = new Ans2();
+            int max = object.largest(num_array);
+            System.out.println("\nThe largest element is " + max);
+        } catch (NumberFormatException e) {
+            System.out.println(e.getLocalizedMessage() + "! Expected Integer value");
             e.printStackTrace();
         }
-
-        scan.close();
     }
 }

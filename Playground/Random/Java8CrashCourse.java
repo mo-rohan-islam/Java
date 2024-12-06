@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class Java8CrashCourse {
 
     public static void main(String[] args) {
-        List<Employee> employeeList = new ArrayList<Employee>();
+        List<Employee> employeeList = new ArrayList<>();
         setupEmployeeList(employeeList);
 
         // employeeList.stream().forEach(System.out::println);

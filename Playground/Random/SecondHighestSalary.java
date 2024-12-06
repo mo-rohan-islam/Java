@@ -16,8 +16,7 @@ class SecondHighestSalary {
         Double secondHighestSalary = listOfEmployees.stream()
                 .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
                 .skip(1)
-                .findFirst()
-                .get()
+                .findFirst().get()
                 .getSalary();
         System.out.println("Second Highest Salary: " + secondHighestSalary);
     }
