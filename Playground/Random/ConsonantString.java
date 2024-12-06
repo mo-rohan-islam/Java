@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Predicate;
+// import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class ConsonantString {
@@ -13,7 +13,7 @@ public class ConsonantString {
         // || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
 
         List<Character> vowelList = Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
-        Predicate<Character> checkVowelFromList = ch -> vowelList.contains(ch);
+        // Predicate<Character> checkVowelFromList = ch -> vowelList.contains(ch);
 
         output = text.chars().mapToObj(ch -> Character.valueOf((char) ch))
                 // .filter(ch -> !checkVowelFromList.test(ch))
