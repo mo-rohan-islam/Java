@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: reactive
+  webflux:
+    base-path: /reactive/api
+  data:
+    mongodb:
+      authentication-database: admin
+      database: reactive
+      uri: mongodb://localhost:27017/reactive
+
+server:
+#  servlet:
+#    context-path: /reactive    # does not work along with spring.webflux.base-path
+#  port: 9000       # If server port needs to be changed from 8080
+  http2:
+    enabled: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+        data:
+          mongodb:
+            core:
+              ReactiveMongoTemplate: DEBUG
+    reactor:
+      netty:
+        http:
+          client: DEBUG
+#    web: DEBUG
