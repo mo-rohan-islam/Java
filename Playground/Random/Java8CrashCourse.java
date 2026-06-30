@@ -22,6 +22,8 @@ public class Java8CrashCourse {
         oldestEmp(employeeList);
         getEmpSalary(employeeList);
         listDownDept(employeeList);
+
+        // groupByDepartment(employeeList);
     }
 
     public static void listDownDept(List<Employee> employeeList) {
@@ -36,6 +38,19 @@ public class Java8CrashCourse {
             entry.getValue().forEach(employee -> System.out.println(employee.getName()));
         }
     }
+
+    // public static void groupByDepartment(List<Employee> employeeList) {
+    //     employeeList.stream()
+    //             .collect(Collectors.groupingBy(Employee::getDepartment))
+    //             .entrySet()
+    //             .forEach(entry -> {
+    //                 System.out.println("--------------------------------------");
+    //                 System.out.println("Employees In " + entry.getKey());
+    //                 System.out.println("--------------------------------------");
+    //                 entry.getValue().stream()
+    //                     .forEach(emp -> System.out.println(emp.getName()));
+    //             });
+    // }
 
     public static void getEmpSalary(List<Employee> employeeList) {
         DoubleSummaryStatistics salaryStats = employeeList.stream()
