@@ -1,1 +1,7 @@
 /GraphQL/.idea/
+
+# Ignore existing Git repositories
+/SpringFramework/
+/SpringBoot/
+/JDBCServletsJSPs/
+/CoreJava/
